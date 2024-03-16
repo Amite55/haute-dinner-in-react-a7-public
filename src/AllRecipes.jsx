@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Recipe from "./Recipe";
 import { useState } from "react";
 
-const AllRecipes = () => {
+const AllRecipes = ({handleCookBtn}) => {
     const [recipes, setRecipes] = useState([]);
     useEffect(()=>{
         fetch('items.json')
@@ -15,6 +15,7 @@ const AllRecipes = () => {
             recipes.map(recipe => <Recipe 
                 key={recipe.id} 
                 recipe={recipe}
+                handleCookBtn={handleCookBtn}
                 ></Recipe>)
           }
         </div>

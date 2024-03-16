@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-key */
 
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleCookBtn }) => {
     const { img, description, pname, time, calories,ingredients } = recipe;
     return (
         <div>
@@ -39,7 +39,7 @@ const Recipe = ({ recipe }) => {
                     <div className="divider"></div>
                     <div className="card-actions  justify-center">
 
-                        <button className="btn w-full rounded-full btn-primary">Want to Cook</button>
+                        <button onClick={() =>handleCookBtn(recipe)} className="btn w-full rounded-full btn-primary">Want to Cook</button>
                     </div>
                 </div>
             </div>
