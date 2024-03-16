@@ -5,6 +5,8 @@ import Banner from './Components/Banner'
 import Navbar from './Components/Navbar'
 import OurRecipe from './Components/OurRecipe'
 import Sidebar from './Components/Sidebar'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [recipeSidebar, setRecipeSidebar] = useState([]);
@@ -14,6 +16,9 @@ function App() {
     if(!isExist){
       const newSidebarRecipe = [...recipeSidebar, recipe];
       setRecipeSidebar(newSidebarRecipe)
+    }
+    else{
+      toast.error('This Cook All ready Existed')
     }
 
   }
@@ -27,6 +32,7 @@ function App() {
       <AllRecipes handleCookBtn={handleCookBtn}></AllRecipes>
 
       <Sidebar recipeSidebar={recipeSidebar}></Sidebar>
+      <ToastContainer />
       </div>
     </>
   )
