@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect } from "react";
 import Recipe from "./Recipe";
 import { useState } from "react";

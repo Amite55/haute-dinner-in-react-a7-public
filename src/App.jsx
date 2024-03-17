@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [recipeSidebar, setRecipeSidebar] = useState([]);
+  const [preparingAdd, setPreparing] = useState([]);
   
   const handleCookBtn = (recipe) =>{
     const isExist = recipeSidebar.find(item => item.id == recipe.id);
@@ -20,7 +21,14 @@ function App() {
     else{
       toast.error('This Cook All ready Existed')
     }
+  }
 
+  const handleParingBtn = (items) => {
+   const newPrepairing = recipeSidebar.filter(item =>  item.id !== items.id)
+    setRecipeSidebar(newPrepairing)
+    // preparing adding
+    const newAddingperparing = [...preparingAdd, items];
+    setPreparing(newAddingperparing)
   }
   return (
     <>
@@ -31,7 +39,11 @@ function App() {
 
       <AllRecipes handleCookBtn={handleCookBtn}></AllRecipes>
 
-      <Sidebar recipeSidebar={recipeSidebar}></Sidebar>
+      <Sidebar 
+      recipeSidebar={recipeSidebar}
+      preparingAdd={preparingAdd}
+      handleParingBtn={handleParingBtn}
+      ></Sidebar>
       <ToastContainer />
       </div>
     </>
