@@ -6,8 +6,8 @@ const Recipe = ({ recipe, handleCookBtn }) => {
     const { img, description, pname, time, calories,ingredients } = recipe;
     return (
         <div>
-            <div className="card bg-base-200 drop-shadow-xl max-h-svh p-6 shadow-xl">
-                <figure><img className="h-60 rounded-lg " src={img} alt="Shoes" /></figure>
+            <div className="card bg-base-200 drop-shadow-xl lg:min-h-dvh p-6 shadow-xl">
+                <img className="rounded-xl" src={img} alt="Shoes" />
                 <div className="card-body">
                     <h2 className="card-title text-white font-bold text-xl">{pname}</h2>
                     <p>{description}</p>

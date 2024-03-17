@@ -3,8 +3,8 @@
         "id": 1,
         "pname": "Classic Beef Burger",
         "description": "A juicy beef patty topped with fresh lettuce, ripe tomato, onions, and your choice of cheese, sandwiched between two toasted sesame seed buns.",
-        "img": "https://i.ibb.co/q0wRth8/amirali-mirhashemian-sc5s-TPMr-Vfk-unsplash.jpg",
-        "time": "30 minutes",
+        "img": "https://i.ibb.co/T0bpfdZ/melissa-walker-horn-Nkw-Np3ho-Qw-unsplash.jpg",
+        "time": 30,
         "ingredients": [
           "Beef patty",
           "Lettuce",
@@ -20,7 +20,7 @@
         "pname": "Spaghetti Carbonara",
         "description": "Al dente spaghetti tossed in a creamy sauce made with eggs, Parmesan cheese, crispy bacon, and black pepper.",
         "img": "https://i.ibb.co/cg9dhbt/zoran-borojevic-5-FECW242og-unsplash.jpg",
-        "time": "25 minutes",
+        "time": 25,
         "ingredients": [
           "Spaghetti",
           "Eggs",
@@ -35,7 +35,7 @@
         "pname": "Grilled Chicken Caesar Salad",
         "description": "Grilled chicken breast served on a bed of crisp romaine lettuce, tossed with Caesar dressing, Parmesan cheese, and croutons.",
         "img": "https://i.ibb.co/W55XMWZ/anna-pelzer-IGf-IGP5-ONV0-unsplash.jpg",
-        "time": "20 minutes",
+        "time": 20,
         "ingredients": [
           "Chicken breast",
           "Romaine lettuce",
@@ -50,7 +50,7 @@
         "pname": "Margherita Pizza",
         "description": "Thin crust pizza topped with tomato sauce, fresh mozzarella cheese, basil leaves, and a drizzle of olive oil.",
         "img": "https://i.ibb.co/0JG48VF/ivan-torres-MQUqbmsz-GGM-unsplash.jpg",
-        "time": "35 minutes",
+        "time": 35,
         "ingredients": [
           "Pizza dough",
           "Tomato sauce",
@@ -65,7 +65,7 @@
         "pname": "Chicken Alfredo Pasta",
         "description": "Tender chicken pieces served over fettuccine pasta, coated in a rich and creamy Alfredo sauce made with butter, cream, and Parmesan cheese.",
         "img": "https://i.ibb.co/yyD4b7h/eaters-collective-dd-ZYOt-ZUn-Bk-unsplash.jpg",
-        "time": "30 minutes",
+        "time": 30,
         "ingredients": [
           "Chicken breast",
           "Fettuccine pasta",
@@ -80,7 +80,7 @@
         "pname": "Vegetable Stir-Fry",
         "description": "A colorful mix of fresh vegetables sautéed in a savory soy sauce and garlic, served over steamed rice.",
         "img": "https://i.ibb.co/C0bxtDW/jonathan-pielmayer-e-FFn-KMi-DMGc-unsplash.jpg",
-        "time": "20 minutes",
+        "time": 20,
         "ingredients": [
           "Assorted vegetables",
           "Soy sauce",
@@ -94,7 +94,7 @@
         "pname": "Grilled Salmon with Lemon Herb Butter",
         "description": "Fresh salmon fillet grilled to perfection and topped with a flavorful blend of melted butter, lemon juice, garlic, and herbs.",
         "img": "https://i.ibb.co/FhsCW93/david-b-townsend-f-V3z-Tanb-O80-unsplash.jpg",
-        "time": "25 minutes",
+        "time": 25 ,
         "ingredients": [
           "Salmon fillet",
           "Butter",
@@ -109,7 +109,7 @@
         "pname": "Chocolate Lava Cake",
         "description": "Decadent chocolate cake with a gooey molten center, served warm and topped with a scoop of vanilla ice cream.",
         "img": "https://i.ibb.co/swrwWLj/alexandra-kusper-k-NUgweu-DJkc-unsplash.jpg",
-        "time": "40 minutes",
+        "time": 40,
         "ingredients": [
           "Chocolate",
           "Flour",

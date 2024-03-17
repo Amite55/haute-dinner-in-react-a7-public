@@ -2,17 +2,19 @@
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 my-4">
-                <div className="flex-1">
+            <div className="navbar bg-base-100 lg:my-4 ">
+                <div className="lg:flex-1">
+                    <div>
                     <a className="btn btn-ghost text-3xl font-bold">Haute <span className="text-green-500">Dinner</span></a>
-                <div className="flex ml-20 gap-6">
+                    </div>
+                <div className="lg:flex lg:ml-20 lg:gap-6">
                     <p className="btn btn-ghost text-xl">Home</p>
                     <p className="btn btn-ghost text-xl">Recipes</p>
                     <p className="btn btn-ghost text-xl">About</p>
                     <p className="btn btn-ghost text-xl">Search</p>
                 </div>
                 </div>
-                <div className="flex-none gap-2">
+                <div className="flex-none lg:gap-2">
                     <div className="form-control">
                         <input type="text" placeholder="Search" className="input input-bordered w-24 rounded-full md:w-auto" />
                     </div>

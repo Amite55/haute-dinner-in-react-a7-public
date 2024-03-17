@@ -8,10 +8,10 @@ const Sidebar = ({ recipeSidebar, handleParingBtn, preparingAdd }) => {
             <h1 className="text-4xl font-bold py-6">Want to cook: {recipeSidebar.length}</h1>
             <div className="divider px-8"></div>
 
-            <div className="flex justify-around mr-12">
-                <p className="text-xl font-bold">Name</p>
-                <p className="text-xl font-bold">Time</p>
-                <p className="text-xl font-bold">Calories</p>
+            <div className="flex justify-around lg:mr-12">
+                <p className="lg:text-xl lg:font-bold">Name</p>
+                <p className="lg:text-xl lg:font-bold">Time</p>
+                <p className="lg:text-xl lg:font-bold">Calories</p>
             </div>
             <div>
                 {
@@ -19,7 +19,7 @@ const Sidebar = ({ recipeSidebar, handleParingBtn, preparingAdd }) => {
                         <div className="flex justify-around mt-4">
                             <p>{index + 1}</p>
                             <p>{items.pname}</p>
-                            <p>{items.time}</p>
+                            <p>{items.time} minute</p>
                             <p>{items.calories}</p>
                             <button onClick={() => handleParingBtn(items)} className="btn rounded-full bg-primary text-white">Preparing</button>
                         </div>
@@ -28,12 +28,12 @@ const Sidebar = ({ recipeSidebar, handleParingBtn, preparingAdd }) => {
             </div>
             <div className="divider"></div>
             <div>
-                <h2 className="text-4xl font-bold py-6">Currently cooking: {preparingAdd.length}</h2>
+                <h2 className="sm:text-2xl lg:text-4xl font-bold py-6">Currently cooking: {preparingAdd.length}</h2>
                 <div className="divider px-8"></div>
                 <div className="flex justify-around mt-8">
-                    <p className="text-xl font-bold">Name</p>
-                    <p className="text-xl font-bold">Time</p>
-                    <p className="text-xl font-bold">Calories</p>
+                    <p className="lg:text-xl lg:font-bold">Name</p>
+                    <p className="lg:text-xl lg:font-bold">Time</p>
+                    <p className="lg:text-xl lg:font-bold">Calories</p>
                 </div>
                 <div>
                 {
@@ -41,7 +41,7 @@ const Sidebar = ({ recipeSidebar, handleParingBtn, preparingAdd }) => {
                         <div className="flex justify-around mt-8">
                             <p>{index + 1}</p>
                             <p>{per.pname}</p>
-                            <p>{per.time}</p>
+                            <p>{per.time} minute</p>
                             <p>{per.calories}</p>
                         </div>
                     )
@@ -50,8 +50,8 @@ const Sidebar = ({ recipeSidebar, handleParingBtn, preparingAdd }) => {
             </div>
             <div className="divider"></div>
             <div className="flex justify-around">
-                <h2 className="font-bold text-xl">Total Time : </h2>
-                <h2 className="font-bold text-xl">Total Calories : </h2>
+                <h2 className="font-bold text-xl">Total Time : {preparingAdd.reduce((p, c) => p + c.time,0)} minute</h2>
+                <h2 className="font-bold text-xl">Total Calories : {preparingAdd.reduce((p,c) => p + c.calories, 0)} </h2>
             </div>
 
         </div>
